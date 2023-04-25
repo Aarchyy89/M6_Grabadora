@@ -17,6 +17,24 @@ public class RecManager : MonoBehaviour
 
     public IEnumerator currentCorrutine;
 
+    public void LoopSound()
+    {
+        isLoop_Active = !isLoop_Active;
+    }
+
+    public void PauseRecording()
+    {
+        isPause_Active = !isPause_Active;
+        if(isPause_Active)
+        {
+            counter = Time.time;    
+        }
+        else
+        {
+            counter += Time.deltaTime;
+        }
+    }
+
     public void  Activate_Deactivate_Rec()
     {
         //cambias de true a false
