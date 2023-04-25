@@ -27,7 +27,7 @@ public class RecManager : MonoBehaviour
         isPause_Active = !isPause_Active;
         if(isPause_Active)
         {
-            counter = Time.time;    
+            
         }
         else
         {
