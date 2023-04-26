@@ -22,17 +22,9 @@ public class RecManager : MonoBehaviour
         isLoop_Active = !isLoop_Active;
     }
 
-    public void PauseRecording()
+    public void PauseSound()
     {
         isPause_Active = !isPause_Active;
-        if(isPause_Active)
-        {
-            
-        }
-        else
-        {
-            counter += Time.deltaTime;
-        }
     }
 
     public void  Activate_Deactivate_Rec()
@@ -83,7 +75,11 @@ public class RecManager : MonoBehaviour
 
         while (isPlay_Active)
         {
-            counter += Time.deltaTime;
+            if(!isPause_Active)
+            {
+                counter += Time.deltaTime;
+            }
+            
 
             if (current_index < maxIndex)
             {
