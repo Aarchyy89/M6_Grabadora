@@ -18,7 +18,7 @@ public class Sound : MonoBehaviour
     public AudioSource audioSource;
 
 
-
+    public bool is_Active;
 
 
 }

@@ -9,6 +9,9 @@ public class RecManager : MonoBehaviour
     public bool isLoop_Active;
     public bool isPause_Active;
 
+    public GameObject content_sound;
+    public Item_Sound item_sound;
+
     [Tooltip("variable para almacenar el tiempo de reproducción entre sonidos")]
     public float counter;
 
@@ -132,6 +135,30 @@ public class RecManager : MonoBehaviour
         {
             lista_nombres_sonidos.Add(songName);
             counter = 0;    
+        }
+    }
+
+    public void Spawn_Sound_List()
+    {
+        Clean_Sound_List();
+        foreach (Sound score in AudioManager.instance.soundslist)
+        {
+            if (!score.is_Active)
+            {
+                Item_Sound _item_sound_list;
+                _item_sound_list = Instantiate(item_sound, content_sound.transform);
+                _item_sound_list.songName = score.songName;
+                _item_sound_list.audioClip = score.audioclip;
+            }
+        }
+    }
+
+    /// Destrueix els elements de la llista
+    private void Clean_Sound_List()
+    {
+        foreach (Transform child in content_sound.transform)
+        {
+            Destroy(child.gameObject);
         }
     }
 }
