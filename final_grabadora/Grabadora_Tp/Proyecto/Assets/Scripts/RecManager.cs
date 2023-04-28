@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class RecManager : MonoBehaviour
@@ -116,8 +117,6 @@ public class RecManager : MonoBehaviour
             yield return null;
         }
         
-
-       
     }
 
     public void AgregarTiempo()
@@ -131,11 +130,31 @@ public class RecManager : MonoBehaviour
 
     public void AgregarSonido(string songName)
     {
-        if (isRec_Active)
+
+        Sound sonido = AudioManager.instance.DevolverSoundSegunNombre(songName);
+
+
+        if(sonido != null)
         {
-            lista_nombres_sonidos.Add(songName);
-            counter = 0;    
+            if (isRec_Active && !sonido.mute)
+            {
+                lista_nombres_sonidos.Add(songName);
+                counter = 0;
+                AgregarTiempo();    
+            }
         }
+        else
+        {
+            if (isRec_Active)
+            {
+                lista_nombres_sonidos.Add(songName);
+                counter = 0;
+                AgregarTiempo();
+            }
+        }
+
+
+
     }
 
     public void Spawn_Sound_List()
@@ -161,4 +180,5 @@ public class RecManager : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
+
 }

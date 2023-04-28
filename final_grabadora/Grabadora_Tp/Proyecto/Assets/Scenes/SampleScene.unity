@@ -1531,16 +1531,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Mute
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Mute
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &265365836
@@ -2323,16 +2323,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Mute
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Mute
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido7
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &520752197
@@ -2456,16 +2456,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Loop
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Loop
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &532621925
@@ -2742,16 +2742,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Loop
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Loop
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &552893401
@@ -3072,16 +3072,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Mute
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Mute
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &692666110
@@ -3531,16 +3531,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Mute
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Mute
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido5
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &798704314
@@ -3795,16 +3795,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Mute
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Mute
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &852720854
@@ -4310,16 +4310,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Mute
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Mute
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido9
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &883016466
@@ -4763,16 +4763,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Loop
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Loop
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido7
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1029643033
@@ -5253,16 +5253,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Loop
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Loop
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1086711637
@@ -6260,16 +6260,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Mute
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Mute
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1271195492
@@ -6393,16 +6393,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Loop
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Loop
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1299571907
@@ -6603,16 +6603,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Loop
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Loop
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido9
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1342394266
@@ -6937,16 +6937,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Loop
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Loop
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido8
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1422955028
@@ -7159,50 +7159,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1473455107
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1473455109}
-  - component: {fileID: 1473455108}
-  m_Layer: 0
-  m_Name: Config_Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1473455108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473455107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12fae4e8d39f1f1439cee87e89f9e107, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1473455109
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473455107}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1492513913
 GameObject:
   m_ObjectHideFlags: 0
@@ -7455,16 +7411,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Mute
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Mute
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido8
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1532075669
@@ -7588,16 +7544,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Loop
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Loop
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido5
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1537893713
@@ -9079,16 +9035,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Loop
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Loop
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1701797078
@@ -9558,16 +9514,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473455108}
-        m_TargetAssemblyTypeName: Config_Manager, Assembly-CSharp
-        m_MethodName: Sound_Mute
-        m_Mode: 1
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Mute
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Sonido1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1795310382
@@ -10075,18 +10031,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 812127966}
-        m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
-        m_MethodName: AgregarTiempo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 812127966}
         m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
         m_MethodName: AgregarSonido

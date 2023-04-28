@@ -53,4 +53,40 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
+
+
+    public Sound DevolverSoundSegunNombre(string soundName)
+    {
+        foreach (Sound currentSound in soundslist)
+        {
+            if (soundName == currentSound.songName)
+            {
+                return currentSound;
+                break;
+            }
+        }
+
+        return null;
+    }
+
+    public void Sonido_Mute(string soundName)
+    {
+        foreach (Sound currentSound in soundslist)
+            if(soundName == currentSound.songName)
+            {
+                currentSound.mute = !currentSound.mute;
+            }
+               
+    }
+
+    public void Sonido_Loop(string soundName) 
+    {
+
+        foreach (Sound currentSound in soundslist)
+            if (soundName == currentSound.songName)
+            {
+                currentSound.loop = !currentSound.loop;
+            }
+
+    }
 }
