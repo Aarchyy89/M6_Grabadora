@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance;
-
     public Sound[] soundslist;
+
+    public static AudioManager instance;
 
     private void Awake()
     {
@@ -75,6 +75,7 @@ public class AudioManager : MonoBehaviour
             if(soundName == currentSound.songName)
             {
                 currentSound.mute = !currentSound.mute;
+                currentSound.audioSource.mute = currentSound.mute;
             }
                
     }
@@ -86,6 +87,7 @@ public class AudioManager : MonoBehaviour
             if (soundName == currentSound.songName)
             {
                 currentSound.loop = !currentSound.loop;
+                currentSound.audioSource.loop = currentSound.loop;
             }
 
     }
