@@ -400,18 +400,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 812127966}
         m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
-        m_MethodName: AgregarTiempo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 812127966}
-        m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
         m_MethodName: AgregarSonido
         m_Mode: 5
         m_Arguments:
@@ -540,7 +528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0, b: 0, a: 0.5019608}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1516,18 +1504,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 812127966}
-        m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
-        m_MethodName: AgregarTiempo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 812127966}
         m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
         m_MethodName: AgregarSonido
@@ -4179,18 +4155,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 812127966}
         m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
-        m_MethodName: AgregarTiempo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 812127966}
-        m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
         m_MethodName: AgregarSonido
         m_Mode: 5
         m_Arguments:
@@ -4771,7 +4735,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1571717789}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Sonido_Volumen_Guardar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &966514009
 GameObject:
   m_ObjectHideFlags: 0
@@ -5943,18 +5919,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 812127966}
-        m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
-        m_MethodName: AgregarTiempo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 812127966}
         m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
         m_MethodName: AgregarSonido
@@ -7182,6 +7146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controls_panel: {fileID: 248022504}
+  sonido: {fileID: 0}
   Selectable_but: {fileID: 1449359675}
   currentindex: 0
 --- !u!1 &1398803846
@@ -7830,18 +7795,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 812127966}
-        m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
-        m_MethodName: AgregarTiempo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 812127966}
         m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
         m_MethodName: AgregarSonido
@@ -8525,7 +8478,7 @@ MonoBehaviour:
   - {fileID: 1492513918}
   - {fileID: 1830464186}
   - {fileID: 857326504}
-  Slider_volume: {fileID: 0}
+  Slider_volume: {fileID: 950182565}
   no_sound: {fileID: 0}
 --- !u!4 &1571717790
 Transform:
@@ -8841,18 +8794,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 812127966}
         m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
-        m_MethodName: AgregarTiempo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 812127966}
-        m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
         m_MethodName: AgregarSonido
         m_Mode: 5
         m_Arguments:
@@ -9143,18 +9084,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 812127966}
-        m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
-        m_MethodName: AgregarTiempo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 812127966}
         m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
         m_MethodName: AgregarSonido
@@ -10347,18 +10276,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 812127966}
         m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
-        m_MethodName: AgregarTiempo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 812127966}
-        m_TargetAssemblyTypeName: RecManager, Assembly-CSharp
         m_MethodName: AgregarSonido
         m_Mode: 5
         m_Arguments:
@@ -10792,7 +10709,7 @@ MonoBehaviour:
   volume: 0
   playOnAwake: 0
   loop: 0
-  mute: 0
+  mute: 1
   audioSource: {fileID: 0}
   is_Active: 0
 --- !u!1 &1966269141

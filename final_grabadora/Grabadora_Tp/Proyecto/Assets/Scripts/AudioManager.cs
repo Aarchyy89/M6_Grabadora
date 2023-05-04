@@ -34,6 +34,7 @@ public class AudioManager : MonoBehaviour
         }
     }  
     
+    
     public void PlaySong(string songName)
     {
         foreach (Sound currentSound in soundslist)
@@ -96,16 +97,14 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void Sonido_Volumen(string soundName)
+    public void Sonido_Volumen()
     {
+        Slider_volume.value = UIManager.instance.sonido.audioSource.volume;
+    }
 
-        foreach (Sound currentSound in soundslist)
-            if (soundName == currentSound.songName)
-            {
-                //currentSound.loop = !currentSound.loop;
-                //currentSound.audioSource.loop = currentSound.loop;
-            }
-
+    public void Sonido_Volumen_Guardar()
+    {
+        UIManager.instance.sonido.audioSource.volume = Slider_volume.value;
     }
 
     public void musicaMute()

@@ -9,8 +9,16 @@ public class UIManager : MonoBehaviour
     [Header("Paneles")]
     public GameObject Controls_panel;
 
+    public Sound sonido;
     public TextMeshProUGUI Selectable_but;
     public int currentindex = 0;
+
+    public static UIManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -18,43 +26,58 @@ public class UIManager : MonoBehaviour
         Controls_panel.SetActive(false);    
     }
 
+    public void Actualizar_Slider()
+    {
+        AudioManager.instance.Slider_volume.value = AudioManager.instance.soundslist[currentindex].audioSource.volume;
+    }
+
+
     public void Panel_Controles()
     {
         Controls_panel.SetActive(true);
         Selectable_but.text = "1";
+        sonido = AudioManager.instance.soundslist[currentindex];
+
+
+        AudioManager.instance.Sonido_Volumen();
     }
 
     public void Seletable_But_Access(string songName)
     {
         Sound sonido = AudioManager.instance.DevolverSoundSegunNombre(songName);
 
-        
-        //sonido = AudioManager.instance.soundslist[currentindex + 1];
-        //Selectable_but.text = currentindex + 1  + "";
-        
-
     }
 
     public void Selectable_But_Plus()
     {
-        Sound sonido = AudioManager.instance.soundslist[currentindex++];
-        Selectable_but.text = currentindex + 1 + "";
-
-        if(currentindex == 9)
+        if (currentindex + 1 < AudioManager.instance.soundslist.Length)
+        {
+            currentindex++;
+        }
+        else
         {
             currentindex = 0;
-            Selectable_but.text = currentindex + 1 + "";
         }
+
+        sonido = AudioManager.instance.soundslist[currentindex];
+        Selectable_but.text = currentindex + 1 + "";
+        Actualizar_Slider();
+
     }
 
     public void Selectable_But_Minus()
     {
-        Sound sonido = AudioManager.instance.soundslist[currentindex--];
-        Selectable_but.text = currentindex + 1 + "";
-        if (currentindex == -1)
+        if (currentindex - 1 > 0)
         {
-            currentindex = 8;
-            Selectable_but.text = currentindex + 1 + "";
+            currentindex--;
         }
+        else
+        {
+            currentindex = AudioManager.instance.soundslist.Length  -1;
+        }
+
+        sonido = AudioManager.instance.soundslist[currentindex];
+        Selectable_but.text = currentindex + 1 + "";
+        Actualizar_Slider();
     }
 }

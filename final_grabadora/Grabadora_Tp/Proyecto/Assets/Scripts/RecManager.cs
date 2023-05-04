@@ -133,7 +133,6 @@ public class RecManager : MonoBehaviour
 
     public void AgregarSonido(string songName)
     {
-
         Sound sonido = AudioManager.instance.DevolverSoundSegunNombre(songName);
 
 
@@ -155,9 +154,6 @@ public class RecManager : MonoBehaviour
                 AgregarTiempo();
             }
         }
-
-
-
     }
 
     public void Spawn_Sound_List()
