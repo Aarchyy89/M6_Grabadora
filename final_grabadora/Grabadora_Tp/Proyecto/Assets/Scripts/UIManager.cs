@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+        currentindex = 0;
         Controls_panel.SetActive(false);    
     }
 
@@ -23,17 +24,37 @@ public class UIManager : MonoBehaviour
         Selectable_but.text = "1";
     }
 
-    public void Seletable_But_Plus(string songName)
+    public void Seletable_But_Access(string songName)
     {
         Sound sonido = AudioManager.instance.DevolverSoundSegunNombre(songName);
-        sonido = AudioManager.instance.soundslist[currentindex + 1];
-        Selectable_but.text = currentindex + 1  + "";
-        Debug.Log("Hola");
 
+        
+        //sonido = AudioManager.instance.soundslist[currentindex + 1];
+        //Selectable_but.text = currentindex + 1  + "";
+        
+
+    }
+
+    public void Selectable_But_Plus()
+    {
+        Sound sonido = AudioManager.instance.soundslist[currentindex++];
+        Selectable_but.text = currentindex + 1 + "";
+
+        if(currentindex == 9)
+        {
+            currentindex = 0;
+            Selectable_but.text = currentindex + 1 + "";
+        }
     }
 
     public void Selectable_But_Minus()
     {
-
+        Sound sonido = AudioManager.instance.soundslist[currentindex--];
+        Selectable_but.text = currentindex + 1 + "";
+        if (currentindex == -1)
+        {
+            currentindex = 8;
+            Selectable_but.text = currentindex + 1 + "";
+        }
     }
 }

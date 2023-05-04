@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] soundslist;
+
+    public Slider Slider_volume;
+    public Image no_sound;
 
     public static AudioManager instance;
 
@@ -90,5 +94,29 @@ public class AudioManager : MonoBehaviour
                 currentSound.audioSource.loop = currentSound.loop;
             }
 
+    }
+
+    public void Sonido_Volumen(string soundName)
+    {
+
+        foreach (Sound currentSound in soundslist)
+            if (soundName == currentSound.songName)
+            {
+                //currentSound.loop = !currentSound.loop;
+                //currentSound.audioSource.loop = currentSound.loop;
+            }
+
+    }
+
+    public void musicaMute()
+    {
+        if (Slider_volume.value == 0)
+        {
+            no_sound.enabled = true;
+        }
+        else
+        {
+            no_sound.enabled = false;
+        }
     }
 }

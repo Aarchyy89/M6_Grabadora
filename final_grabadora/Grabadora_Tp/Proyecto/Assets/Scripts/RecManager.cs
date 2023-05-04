@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RecManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class RecManager : MonoBehaviour
 
     public GameObject content_sound;
     public Item_Sound item_sound;
+
+    public Button selectedBut_sound;
 
     [Tooltip("variable para almacenar el tiempo de reproducción entre sonidos")]
     public float counter;
@@ -180,5 +183,4 @@ public class RecManager : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
-
 }
