@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7.3092, y: -46.0906}
-  m_SizeDelta: {x: -60.8141, y: -156.3994}
+  m_AnchoredPosition: {x: 9.7506, y: -43.014984}
+  m_SizeDelta: {x: -132.4079, y: -182.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73490
 MonoBehaviour:
@@ -680,8 +680,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 224.76001, y: 87.95657}
-  m_SizeDelta: {x: -449.52, y: -164.5504}
+  m_AnchoredPosition: {x: 225.26, y: 101.6712}
+  m_SizeDelta: {x: -450.52, y: -111.1356}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &117122640
 MonoBehaviour:
@@ -2702,6 +2702,7 @@ GameObject:
   - component: {fileID: 532621926}
   - component: {fileID: 532621925}
   - component: {fileID: 532621924}
+  - component: {fileID: 532621927}
   m_Layer: 5
   m_Name: btnlup
   m_TagString: Untagged
@@ -2785,13 +2786,13 @@ MonoBehaviour:
           m_StringArgument: Sonido1
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1397555329}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1397555335}
+        m_TargetAssemblyTypeName: Animaciones, Assembly-CSharp
+        m_MethodName: CambiarAnimacionLop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2835,6 +2836,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532621922}
   m_CullTransparentMesh: 1
+--- !u!95 &532621927
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532621922}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8860b2b42da6034db8a0d2998f4e51f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &545558403
 GameObject:
   m_ObjectHideFlags: 0
@@ -3021,6 +3042,7 @@ GameObject:
   - component: {fileID: 552893402}
   - component: {fileID: 552893401}
   - component: {fileID: 552893400}
+  - component: {fileID: 552893403}
   m_Layer: 5
   m_Name: looopbtn
   m_TagString: Untagged
@@ -3104,13 +3126,13 @@ MonoBehaviour:
           m_StringArgument: Sonido2
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1397555329}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1397555335}
+        m_TargetAssemblyTypeName: Animaciones, Assembly-CSharp
+        m_MethodName: CambiarAnimacionLop2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3154,6 +3176,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552893398}
   m_CullTransparentMesh: 1
+--- !u!95 &552893403
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552893398}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9daedfd9fc9fa44baf35f63e0fb14b4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &650178043
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,6 +5275,7 @@ GameObject:
   - component: {fileID: 1029643034}
   - component: {fileID: 1029643033}
   - component: {fileID: 1029643032}
+  - component: {fileID: 1029643035}
   m_Layer: 5
   m_Name: btnloop
   m_TagString: Untagged
@@ -5316,13 +5359,13 @@ MonoBehaviour:
           m_StringArgument: Sonido7
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1397555329}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1397555335}
+        m_TargetAssemblyTypeName: Animaciones, Assembly-CSharp
+        m_MethodName: CambiarAnimacionLop7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5366,6 +5409,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029643030}
   m_CullTransparentMesh: 1
+--- !u!95 &1029643035
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029643030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 388c42307e2fc1746b94037bcfd4c847, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1053240767
 GameObject:
   m_ObjectHideFlags: 0
@@ -5902,6 +5965,7 @@ GameObject:
   - component: {fileID: 1086711638}
   - component: {fileID: 1086711637}
   - component: {fileID: 1086711636}
+  - component: {fileID: 1086711639}
   m_Layer: 5
   m_Name: lopbtn
   m_TagString: Untagged
@@ -5985,13 +6049,13 @@ MonoBehaviour:
           m_StringArgument: Sonido4
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1397555329}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1397555335}
+        m_TargetAssemblyTypeName: Animaciones, Assembly-CSharp
+        m_MethodName: CambiarAnimacionLop4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6035,6 +6099,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086711634}
   m_CullTransparentMesh: 1
+--- !u!95 &1086711639
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086711634}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 97b06bfe6fe3cf14b9af9d6039d7709f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1105601439
 GameObject:
   m_ObjectHideFlags: 0
@@ -6921,6 +7005,7 @@ GameObject:
   - component: {fileID: 1299571908}
   - component: {fileID: 1299571907}
   - component: {fileID: 1299571906}
+  - component: {fileID: 1299571909}
   m_Layer: 5
   m_Name: btnlooop
   m_TagString: Untagged
@@ -7004,13 +7089,13 @@ MonoBehaviour:
           m_StringArgument: Sonido6
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1397555329}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1397555335}
+        m_TargetAssemblyTypeName: Animaciones, Assembly-CSharp
+        m_MethodName: CambiarAnimacionLop6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7054,6 +7139,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299571904}
   m_CullTransparentMesh: 1
+--- !u!95 &1299571909
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299571904}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc0bbd1b47daf5c488006b253d0374fa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1311827025
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,7 +7186,7 @@ RectTransform:
   m_GameObject: {fileID: 1311827025}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3626, y: 1.43, z: 1}
+  m_LocalScale: {x: 2.2581732, y: 1.366794, z: 0.9558}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1723948352}
@@ -7090,7 +7195,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -341, y: -132.9}
+  m_AnchoredPosition: {x: -341, y: -144}
   m_SizeDelta: {x: 161.18, y: 41.2095}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1311827027
@@ -10231,6 +10336,7 @@ GameObject:
   - component: {fileID: 1701797079}
   - component: {fileID: 1701797078}
   - component: {fileID: 1701797077}
+  - component: {fileID: 1701797080}
   m_Layer: 5
   m_Name: btnluup
   m_TagString: Untagged
@@ -10314,13 +10420,13 @@ MonoBehaviour:
           m_StringArgument: Sonido3
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1397555329}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1397555335}
+        m_TargetAssemblyTypeName: Animaciones, Assembly-CSharp
+        m_MethodName: CambiarAnimacionLop3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -10364,6 +10470,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701797075}
   m_CullTransparentMesh: 1
+--- !u!95 &1701797080
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701797075}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 11f22bffa28b586409d7d0a4b209059d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1723948351
 GameObject:
   m_ObjectHideFlags: 0
@@ -10748,7 +10874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -337.1, y: -192.54}
+  m_AnchoredPosition: {x: -331.7, y: -205}
   m_SizeDelta: {x: 161.18, y: 41.2095}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1795070373
@@ -11439,7 +11565,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -102, y: 41.443}
+  m_AnchoredPosition: {x: -151.7, y: 52.9}
   m_SizeDelta: {x: 168.4648, y: 32.8116}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1844812553
