@@ -13,6 +13,9 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI Selectable_but;
     public int currentindex = 0;
 
+    [Header("---Texto a Actualizar---")]
+    public TextMeshProUGUI Texto_a_Actualizar;
+
     public static UIManager instance;
 
     private void Awake()
@@ -61,6 +64,7 @@ public class UIManager : MonoBehaviour
 
         sonido = AudioManager.instance.soundslist[currentindex];
         Selectable_but.text = currentindex + 1 + "";
+        Actualizar_Texto_Actualizable();
         Actualizar_Slider();
 
     }
@@ -78,6 +82,13 @@ public class UIManager : MonoBehaviour
 
         sonido = AudioManager.instance.soundslist[currentindex];
         Selectable_but.text = currentindex + 1 + "";
+        Actualizar_Texto_Actualizable();
         Actualizar_Slider();
+    }
+
+    public void Actualizar_Texto_Actualizable()
+    {
+        Texto_a_Actualizar.text = "";
+        Texto_a_Actualizar.text = sonido.songName + " ";
     }
 }
