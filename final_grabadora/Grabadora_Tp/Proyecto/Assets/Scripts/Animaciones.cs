@@ -186,7 +186,7 @@ public class Animaciones : MonoBehaviour
         }
         else
         {
-            ButooonLop.GetComponent<Animator>().SetBool("IsPressed", false);
+            ButooonLop7.GetComponent<Animator>().SetBool("IsPressed", false);
         }
     }
     public void CambiarAnimacionLop8()
@@ -200,7 +200,7 @@ public class Animaciones : MonoBehaviour
         }
         else
         {
-            ButooonLop.GetComponent<Animator>().SetBool("IsPressed", false);
+            ButooonLop8.GetComponent<Animator>().SetBool("IsPressed", false);
         }
        
     }
