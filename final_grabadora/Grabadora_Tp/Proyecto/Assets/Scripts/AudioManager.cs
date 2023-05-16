@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] soundslist;
+    //LISTA DE BOTONES A ACTUALIZAR 
 
     public Slider Slider_volume;
     public Image no_sound;
