@@ -22,8 +22,4 @@ public class Item_Sound : MonoBehaviour
         gameObject.GetComponent<AudioSource>().PlayOneShot(audioClip);
     }
 
-    private void Refresh_Selected_Sound()
-    {
-
-    }
 }

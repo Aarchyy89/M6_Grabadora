@@ -91,4 +91,6 @@ public class UIManager : MonoBehaviour
         Texto_a_Actualizar.text = "";
         Texto_a_Actualizar.text = sonido.songName + " ";
     }
+
+    
 }

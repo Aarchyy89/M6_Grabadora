@@ -14,6 +14,8 @@ public class RecManager : MonoBehaviour
     public GameObject content_sound;
     public Item_Sound item_sound;
 
+    public Sound sonido;
+
     public Button selectedBut_sound;
 
     [Tooltip("variable para almacenar el tiempo de reproducción entre sonidos")]
@@ -178,5 +180,12 @@ public class RecManager : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+    }
+
+    public void _Api()
+    {
+        sonido.audioclip = item_sound.audioClip;
+        Debug.Log("hola");
+
     }
 }
