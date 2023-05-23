@@ -18,13 +18,16 @@ public class RecManager : MonoBehaviour
 
     public Button selectedBut_sound;
 
+
     [Tooltip("variable para almacenar el tiempo de reproducción entre sonidos")]
     public float counter;
 
     public List<float> lista_de_tiempos;
     public List<string> lista_nombres_sonidos;
 
+
     public IEnumerator currentCorrutine;
+
 
     public void LoopSound()
     {
@@ -161,7 +164,7 @@ public class RecManager : MonoBehaviour
     public void Spawn_Sound_List()
     {
         Clean_Sound_List();
-        foreach (Sound score in AudioManager.instance.soundslist)
+        foreach (Sound score in AudioManager.instance.templates)
         {
             if (!score.is_Active)
             {
@@ -169,8 +172,11 @@ public class RecManager : MonoBehaviour
                 _item_sound_list = Instantiate(item_sound, content_sound.transform);
                 _item_sound_list.songName = score.songName;
                 _item_sound_list.audioClip = score.audioclip;
+
+                //AudioManager.instance.templates.Add(_item_sound_list);   
             }
         }
+        
     }
 
     /// Destrueix els elements de la llista
@@ -182,10 +188,5 @@ public class RecManager : MonoBehaviour
         }
     }
 
-    public void _Api()
-    {
-        sonido.audioclip = item_sound.audioClip;
-        Debug.Log("hola");
-
-    }
+    
 }
