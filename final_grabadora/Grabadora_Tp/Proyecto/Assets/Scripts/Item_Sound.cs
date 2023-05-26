@@ -13,8 +13,8 @@ public class Item_Sound : MonoBehaviour
     {
         transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = songName;
         transform.GetChild(1).GetComponent<Button>().onClick.AddListener(PlaySound);
+        transform.GetChild(2).GetComponent<Button>().onClick.AddListener(Swap_);
         
-        gameObject.GetComponent<Button>().onClick.AddListener(Refresh);
         //transform.GetChild(2).GetComponent<Button>().onClick.AddListener(Paus);
     }
 
@@ -23,9 +23,10 @@ public class Item_Sound : MonoBehaviour
         gameObject.GetComponent<AudioSource>().PlayOneShot(audioClip);
     }
 
-    private void Refresh()
+    private void Swap_()
     {
-        AudioManager.instance._Api(songName);
+        UIManager.instance._Api(songName);
+        UIManager.instance.iGUALAR_AUDIO();
     }
 
 }

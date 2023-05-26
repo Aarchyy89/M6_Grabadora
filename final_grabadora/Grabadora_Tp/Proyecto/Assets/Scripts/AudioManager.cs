@@ -8,7 +8,6 @@ public class AudioManager : MonoBehaviour
     public Sound[] soundslist;
     public Sound[] templates;
 
-    public string _sounds;
     //LISTA DE BOTONES A ACTUALIZAR 
 
     public Slider Slider_volume;
@@ -123,20 +122,5 @@ public class AudioManager : MonoBehaviour
             no_sound.enabled = false;
         }
     }
-
-    public void _Api(string template)
-    {
-        _sounds = template;
-    }
-
-    public void iGUALAR_AUDIO()
-    {
-        foreach (var sound in soundslist)
-        {
-
-            
-        }
-    }
-
 
 }

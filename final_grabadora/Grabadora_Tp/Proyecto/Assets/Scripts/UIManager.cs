@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject Controls_panel;
 
     public Sound sonido;
+    public Sound backup;
     public TextMeshProUGUI Selectable_but;
     public int currentindex = 0;
 
@@ -17,6 +18,8 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI Texto_a_Actualizar;
 
     public static UIManager instance;
+
+    public string _sounds;
 
     private void Awake()
     {
@@ -40,7 +43,7 @@ public class UIManager : MonoBehaviour
         Controls_panel.SetActive(true);
         Selectable_but.text = "1";
         sonido = AudioManager.instance.soundslist[currentindex];
-
+        backup = sonido;
 
         AudioManager.instance.Sonido_Volumen();
     }
@@ -63,6 +66,7 @@ public class UIManager : MonoBehaviour
         }
 
         sonido = AudioManager.instance.soundslist[currentindex];
+        backup = sonido;
         Selectable_but.text = currentindex + 1 + "";
         Actualizar_Texto_Actualizable();
         Actualizar_Slider();
@@ -92,5 +96,25 @@ public class UIManager : MonoBehaviour
         Texto_a_Actualizar.text = sonido.songName + " ";
     }
 
-    
+
+    public void _Api(string template)
+    {
+        _sounds = template;
+    }
+
+    public void iGUALAR_AUDIO()
+    {
+        foreach (var sound in AudioManager.instance.templates)
+        {
+            if(sound.songName == _sounds)
+            {
+                sonido.songName = sound.songName;
+                sonido.audioclip = sound.audioclip;
+                sonido.audioSource.clip = sonido.audioclip;
+                sound.songName = backup.songName;
+                sound.audioclip = backup.audioclip;
+
+            }
+        }
+    }
 }
