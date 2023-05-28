@@ -29,6 +29,17 @@ public class Animaciones : MonoBehaviour
     public Button ButooonLop7;
     public Button ButooonLop8;
     public Button ButooonLop9;
+
+    public Button _1;
+    public Button _2;
+    public Button _3;
+    public Button _4;
+    public Button _5;
+    public Button _6;
+    public Button _7;
+    public Button _8;
+    public Button _9;
+    
  
     public bool IsPressed;
 
@@ -47,6 +58,154 @@ public class Animaciones : MonoBehaviour
             ButooonLoop.GetComponent<Animator>().SetBool("IsPressed", false);
         }
     }
+    #region botones pressed
+    public void Cambiar_Animacion_Pressed_1()
+    {
+        IsPressed = !IsPressed;
+
+        if (IsPressed)
+        {
+            _1.GetComponent<Animator>().SetTrigger("Pressed");
+            _1.GetComponent<Animator>().SetBool("IsPressed", true);
+
+        }
+        else
+        {
+            _1.GetComponent<Animator>().SetBool("IsPressed", false);
+        }
+    }
+
+    public void Cambiar_Animacion_Pressed_2()
+    {
+        IsPressed = !IsPressed;
+
+        if (IsPressed)
+        {
+            _2.GetComponent<Animator>().SetTrigger("Pressed");
+            _2.GetComponent<Animator>().SetBool("IsPressed", true);
+
+        }
+        else
+        {
+            _2.GetComponent<Animator>().SetBool("IsPressed", false);
+        }
+    }
+
+    public void Cambiar_Animacion_Pressed_3()
+    {
+        IsPressed = !IsPressed;
+
+        if (IsPressed)
+        {
+            _3.GetComponent<Animator>().SetTrigger("Pressed");
+            _3.GetComponent<Animator>().SetBool("IsPressed", true);
+
+        }
+        else
+        {
+            _3.GetComponent<Animator>().SetBool("IsPressed", false);
+        }
+    }
+
+    public void Cambiar_Animacion_Pressed_4()
+    {
+        IsPressed = !IsPressed;
+
+        if (IsPressed)
+        {
+            _4.GetComponent<Animator>().SetTrigger("Pressed");
+            _4.GetComponent<Animator>().SetBool("IsPressed", true);
+
+        }
+        else
+        {
+            _4.GetComponent<Animator>().SetBool("IsPressed", false);
+        }
+    }
+
+    public void Cambiar_Animacion_Pressed_5()
+    {
+        IsPressed = !IsPressed;
+
+        if (IsPressed)
+        {
+            _5.GetComponent<Animator>().SetTrigger("Pressed");
+            _5.GetComponent<Animator>().SetBool("IsPressed", true);
+
+        }
+        else
+        {
+            _5.GetComponent<Animator>().SetBool("IsPressed", false);
+        }
+    }
+
+    public void Cambiar_Animacion_Pressed_6()
+    {
+        IsPressed = !IsPressed;
+
+        if (IsPressed)
+        {
+            _6.GetComponent<Animator>().SetTrigger("Pressed");
+            _6.GetComponent<Animator>().SetBool("IsPressed", true);
+
+        }
+        else
+        {
+            _6.GetComponent<Animator>().SetBool("IsPressed", false);
+        }
+    }
+
+    public void Cambiar_Animacion_Pressed_7()
+    {
+        IsPressed = !IsPressed;
+
+        if (IsPressed)
+        {
+            _7.GetComponent<Animator>().SetTrigger("Pressed");
+            _7.GetComponent<Animator>().SetBool("IsPressed", true);
+
+        }
+        else
+        {
+            _7.GetComponent<Animator>().SetBool("IsPressed", false);
+        }
+    }
+
+    public void Cambiar_Animacion_Pressed_8()
+    {
+        IsPressed = !IsPressed;
+
+        if (IsPressed)
+        {
+            _8.GetComponent<Animator>().SetTrigger("Pressed");
+            _8.GetComponent<Animator>().SetBool("IsPressed", true);
+
+        }
+        else
+        {
+            _8.GetComponent<Animator>().SetBool("IsPressed", false);
+        }
+    }
+
+    public void Cambiar_Animacion_Pressed_9()
+    {
+        IsPressed = !IsPressed;
+
+        if (IsPressed)
+        {
+            _9.GetComponent<Animator>().SetTrigger("Pressed");
+            _9.GetComponent<Animator>().SetBool("IsPressed", true);
+
+        }
+        else
+        {
+            _9.GetComponent<Animator>().SetBool("IsPressed", false);
+        }
+    }
+
+
+
+    #endregion
     public void CambiarAnimacionPlay()
     {
         IsPressed = !IsPressed;

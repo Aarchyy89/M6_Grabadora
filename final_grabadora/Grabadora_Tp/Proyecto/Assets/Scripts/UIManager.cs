@@ -75,16 +75,17 @@ public class UIManager : MonoBehaviour
 
     public void Selectable_But_Minus()
     {
-        if (currentindex - 1 > 0)
+        if (currentindex - 1 > -1)
         {
             currentindex--;
         }
         else
         {
-            currentindex = AudioManager.instance.soundslist.Length  -1;
+            currentindex = AudioManager.instance.soundslist.Length - 1;
         }
 
         sonido = AudioManager.instance.soundslist[currentindex];
+        backup = sonido;
         Selectable_but.text = currentindex + 1 + "";
         Actualizar_Texto_Actualizable();
         Actualizar_Slider();
